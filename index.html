@@ -9,8 +9,8 @@
     <h2>Todo</h2>
     <div ng-controller="TodoListController as todoList">
       <!-- <span>{{todoList.remaining()}} of {{todoList.todos.length}} Sectors</span> -->
-      <span>{{todoList.todos.length}} Sectors in S-REC!</span>
-      [ <a href="" ng-click="todoList.archive()">archive</a> ]
+      <span>Choose your Sectors</span>
+      <!-- [ <a href="" ng-click="todoList.archive()">archive</a> ] -->
       <ul class="unstyled">
         <li ng-repeat="todo in todoList.todos">
           <input type="checkbox" ng-model="todo.done">
