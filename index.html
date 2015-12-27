@@ -1,27 +1,18 @@
-<!doctype html>
-<html ng-app="todoApp">
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="todo.css">
-  </head>
-  <body>
-    <h2>Choose your sectors</h2>
-    <div ng-controller="TodoListController as todoList">
-      <!-- <span>{{todoList.remaining()}} of {{todoList.todos.length}} Sectors</span> -->
-      <!-- [ <a href="" ng-click="todoList.archive()">archive</a> ] -->
-      <ul class="unstyled">
-        <li ng-repeat="todo in todoList.todos">
-          <input type="checkbox" ng-model="todo.done">
-          <span class="done-{{todo.done}}">{{todo.text}}</span>
-        </li>
-      </ul>
-      <span>Add new sector if you didn't find it before</span>
-      <form ng-submit="todoList.addTodo()">
-        <input type="text" ng-model="todoList.todoText"  size="30"
-               placeholder="add new Sector">
-        <input class="btn-primary" type="submit" value="add">
-      </form>
-    </div>
-  </body>
+<html>
+<head>
+	<title>Pruebas con LinkedIn</title>
+
+	<script type="text/javascript" src="//platform.linkedin.com/in.js">
+            api_key:   770cm6jt50jelb
+            onLoad: OnLinkedInFrameworkLoad
+            authorize: true
+            lang:      es_ES
+    </script>
+    <script type="text/javascript" src="js/linkedin.js"></script>
+</head>
+<body>
+	<script type="IN/login"></script>
+
+	<div id="profiles"></div>
+</body>
 </html>
