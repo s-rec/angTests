@@ -11,7 +11,7 @@ angular.module('todoApp', [])
       {text:'Automotive', done:false}];
  
     todoList.addTodo = function() {
-      todoList.todos.push({text:todoList.todoText, done:false});
+      todoList.todos.push({text:todoList.todoText, done:true});
       todoList.todoText = '';
     };
  
