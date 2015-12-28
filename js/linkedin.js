@@ -39,3 +39,7 @@ function GetProfileData() {
 	System.out.println("Name:"+profile.getFirstName()+" "+profile.getLastName());
 
 }
+
+function CsAuthLinkedin(options) {
+    return this._parent = options._parent, this.appId = options.appId, this.popupWindow = {}, this
+}
