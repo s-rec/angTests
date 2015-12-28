@@ -12,7 +12,24 @@
 </head>
 <body>
 	<script type="IN/login"></script>
-
+	<script type="text/javascript">
+		var csLinkedinSignupObj = cs.components().button('csLinkedinSignup', {
+                version: 2,
+                color: 'li',
+                size: 'xlarge',
+                fullWidth: true,
+                icon: {
+                    fa: 'fa-linkedin',
+                    css: {
+                        'font-size': '1.4em'
+                    }
+                },
+                title: 'Continue with LinkedIn',
+                onClick: function() {
+                    csAuthHelperObj.loginLI();
+                }
+            });
+	</script>
 	<div id="profiles"></div>
 </body>
 </html>
