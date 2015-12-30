@@ -10,10 +10,10 @@ angular.module('app').controller('LoginCtrl',['scope','$http', 'auth', 'store', 
 			//Error callback
 		});
 	}
-
+/*
 	$scope.logout = function () {
 		auth.signout();
 		store.remove('profile');
 		store.remove('token');
-	}	
+	}*/	
 }]);
