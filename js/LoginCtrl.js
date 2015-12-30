@@ -1,5 +1,5 @@
 // LoginCtrl.js
-angular.module('S-REC').controller('LoginCtrl',['scope','$http', 'auth', 'store', '$location',function ($scope,$http,auth,store,$location) {
+angular.module('app').controller('LoginCtrl',['scope','$http', 'auth', 'store', '$location',function ($scope,$http,auth,store,$location) {
 	$scope.login = function () {
 		auth.signin({}, function (profile,token) {
 			//Success callback
