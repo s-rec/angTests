@@ -22,6 +22,6 @@
 </head>
 <body>
 	<input type="submit" ng-click="login()" />
-	<input type="submit" ng-click="logout()" value="Log out" />
+	<!-- <input type="submit" ng-click="logout()" value="Log out" /> -->
 </body>
 </html>
